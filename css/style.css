@@ -1,0 +1,147 @@
+body {
+    font-family:Roboto;
+    background-color: #F2BB66;
+    color:#3D4CC4;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Space Grotesk";
+    font-size:30pt;
+    text-align:center
+}
+h2{
+    font-size:30pt;
+    margin: .1rem;
+}
+header {
+    text-align:center;
+}
+
+#hero, footer {
+    color:#3D4CC4;
+    border: 2px solid #3D4CC4;
+    background-color: #819463;
+    text-align:center;
+    padding:10px;
+}
+/*Hero Section*/
+#hero img{
+    width:300px;
+}
+/*Bio Section*/
+#bio{
+    text-align:center;
+}
+
+
+/* Hobbies */
+
+#hobbies ul li:nth-child(even) {
+    color:rgba(0, 0, 0, 0.459);
+
+}
+#hobbies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Gallery */
+
+#gallery{
+    border: 2px solid #3D4CC4;
+}
+
+#gallery img {
+    max-width:100%;
+}
+#gallery figure{
+    text-align:center;
+}
+/* Literature */
+#lit{
+    border: 2px solid #3D4CC4;
+    margin-bottom:2rem;
+
+}
+#lit div{
+    padding:2rem;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+#lit div p{
+    padding: 0.3rem 0;
+    clear:both;
+}
+
+/* Dropcaps*/
+
+#lit div p:nth-child(3n+1):first-letter {
+    color:red;
+    float:left;
+    font-size:3em;
+    padding:.5em;
+    line-height:.65;
+    border:1px solid black;
+    
+
+}
+/* Tablet State*/
+@media screen and (min-width: 60em) {
+/* center hobbies + 1st Media query*/
+   figure{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+
+   }
+   figcaption{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-size:2rem;
+       margin-left: 1rem;
+   }
+    
+    #lit div{
+        max-width: 100%;
+        columns: 20rem;
+    }
+
+
+
+}
+/* large screen size */
+@media screen and (min-width: 100em) {
+    #gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+
+
+    }
+    hr{
+        display: none;
+    }
+    #gallery h2 {
+        grid-column:  1/-1;
+    }
+    figure{
+        display: block;
+    }
+
+
+    
+
+}
+#myVideo{
+    border: 2px solid #3D4CC4;
+    
+}
+#video{
+    text-align:center;
+    max-width:99%;
+
+}
+    
