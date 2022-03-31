@@ -81,7 +81,7 @@
         </section>
         
         <section id="gallery">
-             <h2>Photo Gallery</h2>
+             <h2>Photo Gallery:</h2>
 
              <hr>
 
@@ -120,7 +120,7 @@
         <article id="lit">
 
 
-            <h2>Working Title</h2>
+            <h2>Working Title:</h2>
 
             <div>
                 <p>"Mr. Collins, meanwhile, was meditating in solitude on what had passed. He thought too well of himself to comprehend on what motives his cousin could refuse him; and though his pride was hurt, he suffered in no other way. His regard for her was quite imaginary; and the possibility of her deserving her mother’s reproach prevented his feeling any regret".</p>
@@ -149,8 +149,84 @@
 
         </Section>
          
+        <section id="contact">
+            
+            <h2>Contact Us:</h2>
 
-         
+            <form id="contactForm" name="contactForm" method="post"
+            data-netlify="true">
+
+
+                 <fieldset>
+                    <legend>Contact Form</legend>
+                <div id="formElements">
+
+
+                    <!-- Name -->
+                    <label for="name">Name (required)</label>
+                    <input type="text" id="name" name="name" required>
+                    <!-- Email -->
+                    <label for="email">Email (required)</label>
+                    <input type="email" id="email" name="email" required>
+                    <!-- Phone -->
+                    <label for="phone">Phone (Optional)</label>
+                    <input type="tel" id="" name="phone">
+                    <!-- Phone type -->
+                    <label for="phonetype">Phone type (optional)
+                    </label>
+                    <select id="phonetype" name="phonetype">
+                        <option value="">Select phone type</option>
+                        <option value="Mobile">Mobile</option>
+                        <option value="Work">Work</option>
+                        <option value="Home">Home</option>
+                    </select>
+                    <!-- Message -->
+                    <label for="message">Your Comment (optional)</label>
+                    <textarea id="message" name="message"
+                        rows="8"> Comment!
+                    </textarea>
+                    <!-- Reply -->
+                    <fieldset>
+                        <legend>Would you like a reply?</legend>
+                        <ul>
+                            <li>
+                                <input type="radio" id="message-yes" 
+                                name="reply" value="yes a reply please">
+                                <label for="message-yes">Yes a reply would be nice.</label>
+
+                                </li>
+                            <li>
+                                <input type="radio" id="message-no"
+                                name="reply" value="No reply please" checked="true">
+                                <label for="message-no"></label>No, thanks.
+                            </label>
+                            </li>
+                        </ul>
+                    
+
+
+                    </fieldset>
+                    <!-- Submit -->
+                    <button type="submit">Send</button>
+
+
+                     
+                </div>
+
+
+
+                </fieldset>
+
+            </form>
+
+
+
+        </section>
+
+
+
+
+       
 
     </main>
     
